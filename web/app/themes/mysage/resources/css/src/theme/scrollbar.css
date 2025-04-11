@@ -1,0 +1,27 @@
+ /* scrollbar */
+ /* width */
+ /* ::-webkit-scrollbar {
+     width: 5px;
+     max-height: 5px;
+ } */
+ /* Track */
+ /* ::-webkit-scrollbar-track {
+     background: transparent;
+ } */
+ /* Handle */
+ /* ::-webkit-scrollbar-thumb {
+     @apply bg-secondary ;
+     border-radius: 5px;
+ } */
+ /* Handle on hover */
+ /* ::-webkit-scrollbar-thumb:hover {
+     opacity: 0.5;
+ } */
+ /* For IE, Edge and Firefox */
+ /* .scrollbar-hide {
+     -ms-overflow-style: none; 
+     scrollbar-width: none; 
+ } */
+ /* html {
+     scrollbar-gutter: stable;
+ } */

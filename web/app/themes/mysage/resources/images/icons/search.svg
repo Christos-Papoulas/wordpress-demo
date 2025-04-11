@@ -1,0 +1,29 @@
+<svg class="{{ $classes ?? '' }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.707 17.706">
+    <g id="icon_search" transform="translate(0.5 0.5)">
+        <ellipse
+            id="Ellipse_1"
+            data-name="Ellipse 1"
+            cx="7.935"
+            cy="7.935"
+            rx="7.935"
+            ry="7.935"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1"
+        />
+        <line
+            id="Line_1"
+            data-name="Line 1"
+            x2="2.82"
+            y2="2.977"
+            transform="translate(13.68 13.522)"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1"
+        />
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg class="{{ $classes ?? '' }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 58">
+    <path
+        id="Polygon_1"
+        data-name="Polygon 1"
+        d="M94,0l94,58H0Z"
+        transform="translate(188 58) rotate(180)"
+        fill="currentColor"
+    />
+</svg>

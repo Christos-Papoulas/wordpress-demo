@@ -1,0 +1,10 @@
+/* Cart Styles */
+body.woocommerce-cart {
+    /* Notices */
+    .woocommerce-notices-wrapper {
+        @apply ht-container-large;
+    }
+    .includes_tax{
+		font-size:1em;
+	}
+}

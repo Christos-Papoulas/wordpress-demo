@@ -1,0 +1,24 @@
+{
+    "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+    "generator": "WP-CLI\/2.11.0",
+    "source": "resources\/js\/components\/shop\/product\/button-add-to-cart-single-page.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "en",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "ADD TO CART": [
+                "\u03a0\u03a1\u039f\u03a3\u0398\u0397\u039a\u0397 \u03a3\u03a4\u039f \u039a\u0391\u039b\u0391\u0398\u0399"
+            ],
+            "CHOOSE A VARIATION FIRST": [
+                "\u0395\u03a0\u0399\u039b\u0395\u039e\u03a4\u0395 \u039c\u0399\u0391 \u03a0\u0391\u03a1\u0391\u039b\u039b\u0391\u0393\u0397"
+            ],
+            "OUT OF STOCK": [
+                "\u0395\u039a\u03a4\u039f\u03a3 \u0391\u03a0\u039f\u0398\u0395\u039c\u0391\u03a4\u039f\u03a3"
+            ]
+        }
+    }
+}

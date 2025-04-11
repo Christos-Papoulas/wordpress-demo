@@ -1,0 +1,114 @@
+ /* Inputs */
+ /* Checkboxes */
+input[type=checkbox]:not(.facete-switch) {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    @apply border border-[#B1B1B1];
+}
+input[type=checkbox]:not(.facete-switch)::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transform: scale(0);
+    transition: .3s ease;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color:black;
+}
+input[type=checkbox]:checked:not(.facete-switch)::after {
+    transform: scale(1);
+}
+ /* Radio */
+input[type=radio]{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    @apply rounded-full border border-[#B1B1B1];
+}
+input[type=radio]:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transform: scale(0);
+    transition: .3s ease;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color:black;
+    @apply rounded-full;
+}
+input[type=radio]:checked::after {
+    transform: scale(1);
+}
+ /* type number inputs remove arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@utility theme-input-form-row {
+    @apply border-primary hover:border-primary w-full border-b transition duration-300 ease-in-out;
+}
+@utility theme-input-label {
+    @apply mb-1 block text-xs uppercase;
+}
+@utility theme-input {
+    @apply w-full border-none bg-transparent px-0 !text-base placeholder-[#B6B6B6] ring-0 outline-none focus:outline-none;
+}
+p.ht-custom{
+    @apply  theme-input-form-row;
+    label{
+        @apply theme-input-label;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        @apply theme-input;
+    }
+}
+
+.select2-container{
+    @apply text-base;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    @apply pl-0 ;
+}
+.select2-container--default .select2-selection--single{
+    @apply rounded-none border-t-0 border-l-0 border-r-0 border-b border-primary text-base;
+}
+select.\!border-red-600 + .select2-container--default .select2-selection--single{
+    @apply !border-red-600;
+}
+
+.woocommerce-address-fields__field-wrapper input {
+    width: 100%;
+}
+
+.ht-switch-input-wrapper{
+    @apply bg-gray-300;
+}
+.ht-switch-input-wrapper.checked{
+    @apply bg-black;
+    .ht-switch-input-inner{
+        @apply translate-x-[22px];
+    }
+}

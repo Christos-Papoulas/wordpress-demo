@@ -1,0 +1,86 @@
+[x-cloak] {
+    display: none !important;
+}
+
+.body-no-scroll-mobile {
+@apply overflow-hidden md:overflow-auto;
+}
+
+.body-no-scroll {
+@apply overflow-hidden;
+}
+
+.ht-list-none{
+    @apply list-none ml-0 mb-0;
+}
+.ht-list-none > li{
+    @apply mb-0;
+}
+.paragraph-no-margin p{
+    @apply mb-0;
+}
+.{
+    @apply !no-underline;
+    a{
+        @apply !no-underline;
+    }
+}
+.link-underline {
+    @apply text-primary underline;
+}
+
+.noselect {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Animation for facetes */
+.facete-collapsible {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .4s;
+    pointer-events: none;
+    }
+.facete-collapsible.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* Collapsible elements animation */
+.el-collapsible {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .4s;
+    pointer-events: none;
+}
+.el-collapsible.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.ais-RangeSlider .rheostat-progress {
+    background-color: #B6B6B6;
+}
+
+.in-my-wishlist{
+    @apply !text-red-600;
+    svg > path{
+      @apply !fill-current;
+    }
+}
+  
+/* .mini-cart-counter-solid{
+  @apply !bg-primary !flex !text-white;
+} */
+  
+@media screen AND (min-width:1280px){
+    .fallback-share{
+      display: flex!important;
+    }
+    .navigator-share{
+      display: none!important;
+    }
+}

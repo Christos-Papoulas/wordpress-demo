@@ -1,0 +1,5 @@
+.hero-with-slider-scrolled{
+    .booking-form-tabs-list{
+        @apply md:h-0 pb-3 overflow-hidden;
+    }
+}

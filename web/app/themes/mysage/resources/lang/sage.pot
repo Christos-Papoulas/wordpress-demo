@@ -1,0 +1,1127 @@
+# Copyright (C) 2025 hellenictechnologies.com
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTsage Theme 11.x-dev\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sage\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-03-18T13:20:51+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: sage\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "HTsage Theme"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://hellenictechnologies.com/themes/htsage"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "HTsage Theme is a WordPress starter theme."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "hellenictechnologies.com"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://hellenictechnologies.com/"
+msgstr ""
+
+#: app/filters.php:89
+msgid "Cookie policy"
+msgstr ""
+
+#: app/filters.php:90
+#: app/filters.php:118
+msgid "and"
+msgstr ""
+
+#: app/filters.php:115
+msgid "I have read and agree to the website"
+msgstr ""
+
+#: app/filters.php:117
+msgid "Terms and Conditions"
+msgstr ""
+
+#: app/filters.php:120
+msgid "Privacy Policy"
+msgstr ""
+
+#: app/filters.php:135
+msgid "You must agree to the privacy policy and the terms."
+msgstr ""
+
+#: app/filters.php:151
+msgid "Favorites"
+msgstr ""
+
+#: app/filters.php:298
+#: app/filters.php:307
+msgid "name@email.com"
+msgstr ""
+
+#: app/filters.php:299
+#: app/filters.php:308
+msgid "First name"
+msgstr ""
+
+#: app/filters.php:300
+#: app/filters.php:309
+msgid "Last name"
+msgstr ""
+
+#: app/filters.php:301
+#: app/filters.php:310
+msgid "Address"
+msgstr ""
+
+#: app/filters.php:302
+#: app/filters.php:311
+msgid "Apartment, suite, etc."
+msgstr ""
+
+#: app/filters.php:303
+#: app/filters.php:312
+msgid "Postcode"
+msgstr ""
+
+#: app/filters.php:304
+#: app/filters.php:313
+#: app/HT/Services/StoreService.php:90
+msgid "City"
+msgstr ""
+
+#: app/filters.php:305
+#: app/filters.php:314
+msgid "Phone"
+msgstr ""
+
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:36
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:37
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:105
+msgid "Product back in stock"
+msgstr ""
+
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:55
+msgid "Email Content"
+msgstr ""
+
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:58
+msgid "Hello!"
+msgstr ""
+
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:58
+msgid "⏰ Το <strong>{product}</strong> is back in stock"
+msgstr ""
+
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:58
+msgid "🛒 Take a look at {product_url}"
+msgstr ""
+
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:58
+msgid "Don't miss the chance!"
+msgstr ""
+
+#: app/HT/EmailClass/class-wc-email-customer-back-instock-product.php:93
+msgid "Product back in stock!"
+msgstr ""
+
+#: app/HT/PaymentGatewayClasses/class-wc-payment-gateway-card-on-delivery.php:19
+msgid "Credit or Debit card on delivery"
+msgstr ""
+
+#: app/HT/PaymentGatewayClasses/class-wc-payment-gateway-card-on-delivery.php:20
+msgid "Let your shoppers pay upon delivery — by credit or debit card."
+msgstr ""
+
+#: app/HT/PaymentGatewayClasses/class-wc-payment-gateway-cash-on-local-pickup.php:19
+msgid "Cash on local pickup"
+msgstr ""
+
+#: app/HT/PaymentGatewayClasses/class-wc-payment-gateway-cash-on-local-pickup.php:20
+msgid "Let your shoppers pay upon local pickup — by cash or other methods of payment."
+msgstr ""
+
+#: app/HT/Services/Cart/CartService.php:121
+msgid "Total Discount"
+msgstr ""
+
+#: app/HT/Services/Cart/CartService.php:296
+msgid "Please Select A Variation"
+msgstr ""
+
+#: app/HT/Services/Cart/CartService.php:309
+msgid "Something went wrong."
+msgstr ""
+
+#: app/HT/Services/Cart/CartService.php:338
+msgid "An error occured"
+msgstr ""
+
+#: app/HT/Services/Cart/CartService.php:704
+msgid "Sorry, we could not add all products to the cart"
+msgstr ""
+
+#: app/HT/Services/Cart/CartService.php:705
+msgid "Product/s removed from your cart."
+msgstr ""
+
+#: app/HT/Services/Cart/CartService.php:806
+msgid "Your cart contains frozen products. Υou will need to remove these products in order to proceed to checkout for pick up from an M&S Store outside of Attica."
+msgstr ""
+
+#: app/HT/Services/CheckoutService.php:93
+msgid "The below products are frozen and can' t be shipped to the chosen store. Please remove them or select a store in Athens"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:32
+msgid "Need Invoice?"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:39
+msgid "VAT"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:48
+msgid "Company Name"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:56
+#: app/HT/Services/InvoiceService.php:230
+msgid "Tax Office"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:64
+msgid "Company Activity"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:89
+msgid "Invalid Request."
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:90
+msgid "Did you forget a field?"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:103
+#: app/HT/Services/InvoiceService.php:118
+#: app/HT/Services/InvoiceService.php:132
+#: app/HT/Services/InvoiceService.php:140
+#: app/HT/Services/InvoiceService.php:149
+msgid "We could not validate your vat number."
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:104
+#: app/HT/Services/InvoiceService.php:119
+msgid "VIES service is not available at the moment or vat number is wrong. Please try again later."
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:133
+msgid "AADE requires username and password. Did you saved the details in the options page?"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:141
+msgid "AADE service is not available at the moment. Please try again later."
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:150
+msgid "There was an error communicating with aadde. Please try again later"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:227
+msgid "Company"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:228
+msgid "Activity"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:229
+msgid "Vat Number"
+msgstr ""
+
+#: app/HT/Services/InvoiceService.php:248
+msgid "INVOICE"
+msgstr ""
+
+#: app/HT/Services/Product/ProductService.php:152
+msgid "Determines the appearance of terms on the website."
+msgstr ""
+
+#: app/HT/Services/SetupService.php:200
+msgid "Continued"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:11
+msgctxt "Post type general name"
+msgid "Shortcode Blocks"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:12
+msgctxt "Post type singular name"
+msgid "Shortcode Block"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:13
+msgctxt "Admin Menu text"
+msgid "Shortcode Blocks"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:14
+msgctxt "Add New on Toolbar"
+msgid "Shortcode Block"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:15
+#: app/HT/Services/StoreService.php:18
+msgid "Add New"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:16
+msgid "Add New Shortcode Block"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:17
+msgid "New Shortcode Block"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:18
+msgid "Edit Shortcode Block"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:19
+msgid "View Shortcode Block"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:20
+msgid "All Shortcode Blocks"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:21
+msgid "Search Shortcode Blocks"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:22
+msgid "Parent Shortcode Blocks:"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:23
+msgid "No Shortcode Blocks found."
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:24
+msgid "No Shortcode Blocks found in Trash."
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:25
+#: app/HT/Services/StoreService.php:28
+msgctxt "Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+msgid "Featured Image"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:26
+#: app/HT/Services/StoreService.php:29
+msgctxt "Overrides the “Set featured image” phrase for this post type. Added in 4.3"
+msgid "Set featured image"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:27
+#: app/HT/Services/StoreService.php:30
+msgctxt "Overrides the “Remove featured image” phrase for this post type. Added in 4.3"
+msgid "Remove featured image"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:28
+#: app/HT/Services/StoreService.php:31
+msgctxt "Overrides the “Use as featured image” phrase for this post type. Added in 4.3"
+msgid "Use as featured image"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:29
+msgctxt "The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4"
+msgid "Shortcode Block archives"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:30
+msgctxt "Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4"
+msgid "Insert into shortcode block"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:31
+msgctxt "Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this shortcode block"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:32
+msgctxt "Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter Shortcode Blocks list"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:33
+msgctxt "Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
+msgid "Shortcode Blocks list navigation"
+msgstr ""
+
+#: app/HT/Services/ShortcodeBlockService.php:34
+msgctxt "Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Shortcode Blocks list"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:14
+msgctxt "Post type general name"
+msgid "Stores"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:15
+msgctxt "Post type singular name"
+msgid "Store"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:16
+msgctxt "Admin Menu text"
+msgid "Stores"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:17
+msgctxt "Add New on Toolbar"
+msgid "Store"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:19
+msgid "Add New Store"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:20
+msgid "New Store"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:21
+msgid "Edit Store"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:22
+msgid "View Store"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:23
+msgid "All Stores"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:24
+msgid "Search Stores"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:25
+msgid "Parent Stores:"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:26
+msgid "No Stores found."
+msgstr ""
+
+#: app/HT/Services/StoreService.php:27
+msgid "No Stores found in Trash."
+msgstr ""
+
+#: app/HT/Services/StoreService.php:32
+msgctxt "The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4"
+msgid "Store archives"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:33
+msgctxt "Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4"
+msgid "Insert into store"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:34
+msgctxt "Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this store"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:35
+msgctxt "Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter Stores list"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:36
+msgctxt "Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
+msgid "Stores list navigation"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:37
+msgctxt "Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Stores list"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:60
+msgid "Categories"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:61
+#: app/HT/Services/StoreService.php:64
+msgid "Category"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:89
+#: app/HT/Services/StoreService.php:94
+msgid "Cities"
+msgstr ""
+
+#: app/HT/Services/StoreService.php:221
+#: app/HT/Services/StoreService.php:354
+msgid "Store"
+msgstr ""
+
+#: app/HT/Services/Wishlist.php:67
+#: app/HT/Services/Wishlist.php:130
+msgid "Failed to update"
+msgstr ""
+
+#: app/HT/Services/Wishlist.php:75
+msgid "Already in wishlist"
+msgstr ""
+
+#: app/HT/Services/Wishlist.php:84
+#: app/HT/Services/Wishlist.php:139
+#: app/HT/Services/Wishlist.php:168
+msgid "Please log in to use the wishlist."
+msgstr ""
+
+#: app/setup.php:464
+msgid "Top Bar Navigation"
+msgstr ""
+
+#: app/setup.php:465
+msgid "Primary Navigation"
+msgstr ""
+
+#: app/setup.php:466
+msgid "Bottom Footer Navigation"
+msgstr ""
+
+#: app/setup.php:534
+msgid "Footer Col 1"
+msgstr ""
+
+#: app/setup.php:538
+msgid "Footer Col 2"
+msgstr ""
+
+#: app/setup.php:542
+msgid "Footer Col 3"
+msgstr ""
+
+#: app/setup.php:546
+msgid "Footer Col 4"
+msgstr ""
+
+#: app/setup.php:550
+msgid "Footer Col 5"
+msgstr ""
+
+#: app/setup.php:554
+msgid "Footer Col 6"
+msgstr ""
+
+#: app/typesense.php:186
+#: app/typesense.php:187
+msgid "Options"
+msgstr ""
+
+#. translators: %1$s is replaced with the number of comments and %2$s with the post title
+#: app/View/Composers/Comments.php:44
+msgctxt "comments title"
+msgid "%1$s response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/View/Composers/Comments.php:45
+msgctxt "comments title"
+msgid "One"
+msgstr ""
+
+#: app/View/Composers/Comments.php:80
+msgid "&larr; Older comments"
+msgstr ""
+
+#: app/View/Composers/Comments.php:96
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: app/View/Composers/Post.php:50
+msgid "Latest Posts"
+msgstr ""
+
+#. translators: %s is replaced with the search query
+#: app/View/Composers/Post.php:60
+msgid "Search Results for %s"
+msgstr ""
+
+#: app/View/Composers/Post.php:66
+msgid "Not Found"
+msgstr ""
+
+#: app/View/Composers/Post.php:81
+#: resources/views/partials/content-single.blade.php:40
+msgid "Pages:"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Custom Template"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Wishlist Template"
+msgstr ""
+
+#. Translators: $s shipping destination.
+#: resources/views/woocommerce/cart/cart-shipping.blade.php:128
+#: resources/views/woocommerce/cart/cart-shipping.blade.php:133
+msgid "Shippint to %s."
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart-shipping.blade.php:129
+#: resources/views/woocommerce/cart/cart-shipping.blade.php:134
+msgid "Edit Address"
+msgstr ""
+
+#: resources/views/woocommerce/cart/proceed-to-checkout-button.blade.php:28
+msgid "Checkout"
+msgstr ""
+
+#: resources/views/woocommerce/myaccount/my-address.blade.php:64
+msgid "Edit"
+msgstr ""
+
+#: resources/views/woocommerce/myaccount/my-address.blade.php:64
+msgid "Add"
+msgstr ""
+
+#: resources/views/woocommerce/myaccount/my-address.blade.php:68
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: resources/views/404.blade.php:8
+msgid "Sorry, but the page you are trying to view does not exist."
+msgstr ""
+
+#: resources/views/blocks/accordion/accordion.blade.php:147
+#: resources/views/posts/post/partials/load-more-btn.blade.php:17
+msgid "Show more"
+msgstr ""
+
+#: resources/views/blocks/post/post-grid.blade.php:8
+msgid "NEWS"
+msgstr ""
+
+#: resources/views/blocks/post/post-grid.blade.php:12
+msgid "READ MORE"
+msgstr ""
+
+#: resources/views/blocks/post/post-grid.blade.php:69
+msgid "OUR STORES"
+msgstr ""
+
+#: resources/views/components/compare-button.blade.php:11
+msgid "Compare"
+msgstr ""
+
+#: resources/views/components/compare-list-notification.blade.php:22
+msgid "Product removed from your compare list."
+msgstr ""
+
+#: resources/views/components/compare-list-notification.blade.php:23
+msgid "Product added to your compare list."
+msgstr ""
+
+#: resources/views/components/compare-list-notification.blade.php:27
+msgid "GO TO COMPARE PAGE"
+msgstr ""
+
+#: resources/views/components/compare-list-notification.blade.php:38
+#: resources/views/components/wishlist-notification.blade.php:27
+#: resources/views/woocommerce/cart/mini-cart.blade.php:123
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:145
+msgid "CONTINUE SHOPPING"
+msgstr ""
+
+#: resources/views/components/product-card-alpinejs.blade.php:34
+#: resources/views/components/product-card.blade.php:28
+msgid "LAST UNITS"
+msgstr ""
+
+#: resources/views/components/product-card-alpinejs.blade.php:40
+#: resources/views/components/product-card.blade.php:34
+msgid "PAIR OPTION AVAILABLE"
+msgstr ""
+
+#: resources/views/components/product-card-alpinejs.blade.php:46
+#: resources/views/components/product-card.blade.php:40
+msgid "NEW"
+msgstr ""
+
+#: resources/views/components/product-card-alpinejs.blade.php:85
+#: resources/views/components/product-card.blade.php:78
+msgid "CHOOSE"
+msgstr ""
+
+#: resources/views/components/product-card-alpinejs.blade.php:100
+msgid "Remove"
+msgstr ""
+
+#: resources/views/components/wishlist-button.blade.php:16
+msgid "REMOVE FROM WISHLIST"
+msgstr ""
+
+#: resources/views/components/wishlist-button.blade.php:16
+msgid "ADD TO WISHLIST"
+msgstr ""
+
+#: resources/views/components/wishlist-notification.blade.php:16
+msgid "PRODUCT REMOVED FROM YOUR WISHLIST"
+msgstr ""
+
+#: resources/views/components/wishlist-notification.blade.php:16
+msgid "PRODUCT ADDED TO YOUR WISHLIST."
+msgstr ""
+
+#: resources/views/components/wishlist-notification.blade.php:20
+msgid "GO TO WISHLIST"
+msgstr ""
+
+#: resources/views/forms/search.blade.php:4
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: resources/views/forms/search.blade.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: resources/views/forms/search.blade.php:16
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: resources/views/index.blade.php:8
+#: resources/views/search.blade.php:8
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: resources/views/layouts/app.blade.php:18
+msgid "Skip to content"
+msgstr ""
+
+#: resources/views/partials/comments.blade.php:37
+msgid "Comments are closed."
+msgstr ""
+
+#: resources/views/partials/content-single.blade.php:49
+msgid "Share article"
+msgstr ""
+
+#: resources/views/partials/content-single.blade.php:96
+msgid "Additional Updates"
+msgstr ""
+
+#: resources/views/partials/content-single.blade.php:114
+msgid "Read more"
+msgstr ""
+
+#: resources/views/partials/share-post.blade.php:148
+msgid "Copied!"
+msgstr ""
+
+#: resources/views/posts/partials/clear-filters-btn.blade.php:10
+#: resources/views/posts/partials/mobile-actions.blade.php:9
+msgid "Clear All"
+msgstr ""
+
+#: resources/views/posts/partials/filters-fab.blade.php:20
+msgid "Filters"
+msgstr ""
+
+#: resources/views/posts/partials/filters.blade.php:9
+msgid "FILTERS"
+msgstr ""
+
+#: resources/views/posts/partials/load-more-button.blade.php:8
+msgid "more"
+msgstr ""
+
+#: resources/views/posts/partials/mobile-actions.blade.php:16
+msgid "OK"
+msgstr ""
+
+#: resources/views/posts/partials/subcats.blade.php:17
+msgid "MORE"
+msgstr ""
+
+#: resources/views/posts/post/partials/posts.blade.php:43
+msgid "No Posts Found"
+msgstr ""
+
+#: resources/views/posts/store/archive.blade.php:4
+msgid "STORES"
+msgstr ""
+
+#: resources/views/posts/store/archive.blade.php:52
+msgid "ENTER CITY OR POST CODE"
+msgstr ""
+
+#: resources/views/posts/store/archive.blade.php:91
+msgid "FIND THE NEAREST STORE"
+msgstr ""
+
+#: resources/views/posts/store/partials/posts.blade.php:18
+msgid "See in map"
+msgstr ""
+
+#: resources/views/posts/store/partials/posts.blade.php:31
+msgid "No posts found"
+msgstr ""
+
+#: resources/views/sections/footer/bottombar.blade.php:38
+msgid "Engineered with"
+msgstr ""
+
+#: resources/views/sections/footer/bottombar.blade.php:40
+msgid "by"
+msgstr ""
+
+#: resources/views/sections/footer/template.blade.php:8
+msgid "LANGUAGE:"
+msgstr ""
+
+#: resources/views/sections/footer/template.blade.php:14
+msgid "FOLLOW US:"
+msgstr ""
+
+#: resources/views/sections/header/mobile-menu.blade.php:12
+msgid "CLOSE"
+msgstr ""
+
+#: resources/views/sections/header/product-sticky-add-to-cart.blade.php:36
+#: resources/views/woocommerce/single-product/add-to-cart/simple.blade.php:89
+#: resources/js/components/shop/product/button-add-to-cart-single-page.js:31
+#: resources/js/components/shop/product/button-add-to-cart-single-page.js:172
+#: resources/js/components/shop/product/product-card.js:25
+#: resources/js/components/shop/product/product-card.js:93
+msgid "ADD TO CART"
+msgstr ""
+
+#: resources/views/sections/header/template.blade.php:89
+msgid "LOGIN/REGISTER"
+msgstr ""
+
+#: resources/views/sections/header/topbar.blade.php:16
+msgid "call us"
+msgstr ""
+
+#: resources/views/sections/header/topbar.blade.php:22
+msgid "email us"
+msgstr ""
+
+#: resources/views/template-wishlist.blade.php:15
+msgid "Delete Wishlist?"
+msgstr ""
+
+#: resources/views/template-wishlist.blade.php:16
+msgid "All products will be removed from this wishlist."
+msgstr ""
+
+#: resources/views/template-wishlist.blade.php:17
+msgid "Agree"
+msgstr ""
+
+#: resources/views/template-wishlist.blade.php:18
+msgid "Disagree"
+msgstr ""
+
+#: resources/views/template-wishlist.blade.php:28
+msgid "Please add an item to your wishlist."
+msgstr ""
+
+#: resources/views/template-wishlist.blade.php:56
+#: resources/views/woocommerce/cart/cart-empty.blade.php:49
+#: resources/views/woocommerce/cart/cart.blade.php:333
+#: resources/views/woocommerce/cart/mini-cart.blade.php:138
+msgid "BACK TO STORE"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:33
+#: resources/views/woocommerce/cart/mini-cart.blade.php:7
+msgid "SHOPPING BAG"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:64
+msgid "Continue Shopping"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:81
+#: resources/views/woocommerce/cart/mini-cart.blade.php:17
+msgid "PRODUCTS"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:82
+msgid "PRICE"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:83
+msgid "QUANTITY"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:84
+msgid "REMOVE"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:122
+#: resources/views/woocommerce/cart/mini-cart.blade.php:48
+#: resources/views/woocommerce/checkout/review-order.blade.php:86
+#: resources/views/woocommerce/content-single-product.blade.php:93
+msgid "SKU:"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:193
+#: resources/views/woocommerce/cart/cart.blade.php:255
+msgid "SHIPPING"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:200
+msgid "Please fill the required shipping fields."
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:238
+msgid "TOTALS"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:243
+msgid "SUBTOTAL"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:249
+#: resources/views/woocommerce/cart/cart.blade.php:313
+msgid "COUPON"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:268
+msgid "TOTAL"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:282
+msgid "COUPONS"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:318
+msgid "APPLY"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:342
+msgid "CHECKOUT"
+msgstr ""
+
+#: resources/views/woocommerce/cart/cart.blade.php:369
+msgid "One moment, verifying stock in our ERP"
+msgstr ""
+
+#: resources/views/woocommerce/cart/mini-cart.blade.php:13
+msgid "Close Shopping Bag"
+msgstr ""
+
+#: resources/views/woocommerce/cart/mini-cart.blade.php:19
+msgid "CLEAR"
+msgstr ""
+
+#: resources/views/woocommerce/cart/mini-cart.blade.php:113
+msgid "PRODUCTS:"
+msgstr ""
+
+#: resources/views/woocommerce/cart/mini-cart.blade.php:118
+msgid "GO TO SHOPPING BAG"
+msgstr ""
+
+#: resources/views/woocommerce/cart/partials/freeshipping.blade.php:23
+msgid "Free shipping to your location on orders over"
+msgstr ""
+
+#: resources/views/woocommerce/cart/partials/freeshipping.blade.php:35
+msgid "You have Free Shipping!"
+msgstr ""
+
+#: resources/views/woocommerce/cart/partials/freeshipping.blade.php:44
+msgid "Remaining"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/form-billing.blade.php:50
+msgid "Validate Vat"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/form-checkout.blade.php:55
+msgid "INVOICE?"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/form-checkout.blade.php:95
+msgid "Choose shipping method :"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/payment-method.blade.php:37
+msgid "Alpha Bank"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/payment-method.blade.php:38
+msgid "Εθνική Τράπεζα"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/payment-method.blade.php:39
+msgid "Eurobank"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/payment-method.blade.php:40
+msgid "Άλλη Τράπεζα"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/payment-method.blade.php:41
+msgid "Ticket Restaurant Prepaid"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/payment.blade.php:31
+#: resources/views/woocommerce/checkout/review-order.blade.php:155
+msgid "DISCOUNT CODE"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/payment.blade.php:37
+#: resources/views/woocommerce/checkout/review-order.blade.php:161
+msgid "Redemption"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/payment.blade.php:42
+msgid "Choose payment method:"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/review-order.blade.php:145
+msgid "Show less products"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/review-order.blade.php:145
+msgid "Show more products"
+msgstr ""
+
+#: resources/views/woocommerce/checkout/thankyou.blade.php:104
+msgid "Payment Method"
+msgstr ""
+
+#: resources/views/woocommerce/content-single-product.blade.php:101
+msgid "MORE INFORMATION"
+msgstr ""
+
+#: resources/views/woocommerce/content-single-product.blade.php:113
+msgid "SPECS"
+msgstr ""
+
+#: resources/views/woocommerce/content-single-product.blade.php:153
+msgid "BOUGHT TOGETHER"
+msgstr ""
+
+#: resources/views/woocommerce/content-single-product.blade.php:158
+msgid "Bought together products"
+msgstr ""
+
+#: resources/views/woocommerce/content-single-product.blade.php:164
+msgid "MOST POPULAR RIGHT NOW"
+msgstr ""
+
+#: resources/views/woocommerce/content-single-product.blade.php:169
+msgid "Related Products"
+msgstr ""
+
+#: resources/views/woocommerce/myaccount/form-lost-password.blade.php:21
+msgid "Lost your password?"
+msgstr ""
+
+#: resources/views/woocommerce/myaccount/form-lost-password.blade.php:56
+msgid "Return to login page"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/add-to-cart/partials/variable-theme.blade.php:143
+msgid "Clear selections"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/add-to-cart/simple.blade.php:92
+#: resources/js/components/shop/product/button-add-to-cart-single-page.js:169
+#: resources/js/components/shop/product/product-card.js:91
+msgid "OUT OF STOCK"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/add-to-cart/variation-add-to-cart-button.blade.php:51
+#: resources/js/components/shop/product/button-add-to-cart-single-page.js:172
+msgid "CHOOSE A VARIATION FIRST"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/specifications.blade.php:5
+msgid "Specifications"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/tags.blade.php:3
+msgid "TAGS:"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:14
+msgid "Models"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:17
+msgid "(Click to show availability)"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:33
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:54
+msgid "on backorder"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:37
+msgid "in stock"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:49
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:59
+msgid "out of stock"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:95
+msgid "Notify me"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:106
+msgid "Enter your email and we will notify you when the product is in stock."
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:114
+msgid "is available."
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:120
+msgid "Thank you, we will notify you."
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:154
+msgid "NOTIFY ME"
+msgstr ""
+
+#: resources/views/woocommerce/single-product/partials/variations-stock-status.blade.php:184
+msgid "Available only in store"
+msgstr ""

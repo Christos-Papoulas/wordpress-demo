@@ -1,0 +1,62 @@
+<svg
+    class="{{ $classes ?? '' }}"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24.222"
+    height="24.248"
+    viewBox="0 0 24.222 24.248"
+>
+    <g transform="translate(1 1)">
+        <path
+            id="Path_6482"
+            data-name="Path 6482"
+            d="M1307.708,2146.513h-8.4a2.793,2.793,0,0,1-2.741-2.254l-1.419-7.228h17.438l-2.2,7.479A2.794,2.794,0,0,1,1307.708,2146.513Z"
+            transform="translate(-1290.367 -2131.657)"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            fill-rule="evenodd"
+        />
+        <path
+            id="Path_6483"
+            data-name="Path 6483"
+            d="M1288.6,2129.674h1.257c1.961,0,2.571,1.226,3.109,3.219l.419,2.153"
+            transform="translate(-1288.601 -2129.674)"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            fill-rule="evenodd"
+        />
+        <ellipse
+            id="Ellipse_221"
+            data-name="Ellipse 221"
+            cx="2.066"
+            cy="2.066"
+            rx="2.066"
+            ry="2.066"
+            transform="translate(6.517 18.116)"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+        />
+        <ellipse
+            id="Ellipse_222"
+            data-name="Ellipse 222"
+            cx="2.066"
+            cy="2.066"
+            rx="2.066"
+            ry="2.066"
+            transform="translate(15.77 18.116)"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+        />
+    </g>
+</svg>

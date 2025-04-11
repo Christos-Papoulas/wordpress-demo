@@ -1,0 +1,85 @@
+<svg class="{{ $classes ?? '' }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.143 16.355">
+    <g id="Group_15543" data-name="Group 15543" transform="translate(0 1.999)">
+        <line
+            id="Line_1902"
+            data-name="Line 1902"
+            x2="4.75"
+            transform="translate(0 0.001)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            id="Line_1905"
+            data-name="Line 1905"
+            x2="4.75"
+            transform="translate(6.696 0.001)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            id="Line_1908"
+            data-name="Line 1908"
+            x2="4.75"
+            transform="translate(13.393 0.001)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            id="Line_1904"
+            data-name="Line 1904"
+            x2="4.75"
+            transform="translate(0 12.355)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            id="Line_1907"
+            data-name="Line 1907"
+            x2="4.75"
+            transform="translate(6.696 12.355)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            id="Line_1910"
+            data-name="Line 1910"
+            x2="4.75"
+            transform="translate(13.393 12.355)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            id="Line_1903"
+            data-name="Line 1903"
+            x2="4.75"
+            transform="translate(0 6.178)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            id="Line_1906"
+            data-name="Line 1906"
+            x2="4.75"
+            transform="translate(6.696 6.178)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            id="Line_1909"
+            data-name="Line 1909"
+            x2="4.75"
+            transform="translate(13.393 6.178)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+@import '../fonts/roboto.css';
+@import 'tailwindcss';
+@import './src/base.css';
+@import './src/theme.css';
+@import './src/helpers.css';
+@import '../mobiscrolljs/css/mobiscroll.javascript.min.css';
+@source "../views/";
+@source "../../app/";
+@source "../../search-with-typesense/";

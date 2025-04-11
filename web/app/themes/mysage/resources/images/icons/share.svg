@@ -1,0 +1,80 @@
+<svg
+    class="{{ $classes ?? '' }}"
+    id="share_icon"
+    data-name="share icon"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 19 19"
+>
+    <defs>
+        <clipPath id="clip-path">
+            <rect
+                id="Rectangle_7293"
+                data-name="Rectangle 7293"
+                width="19"
+                height="19"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+            />
+        </clipPath>
+    </defs>
+    <g id="Group_15590" data-name="Group 15590" clip-path="url(#clip-path)">
+        <ellipse
+            id="Ellipse_1927"
+            data-name="Ellipse 1927"
+            cx="3.079"
+            cy="3.099"
+            rx="3.079"
+            ry="3.099"
+            transform="translate(0.5 5.42)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+        />
+        <ellipse
+            id="Ellipse_1928"
+            data-name="Ellipse 1928"
+            cx="2.438"
+            cy="2.454"
+            rx="2.438"
+            ry="2.454"
+            transform="translate(13.624 0.5)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+        />
+        <ellipse
+            id="Ellipse_1929"
+            data-name="Ellipse 1929"
+            cx="3.776"
+            cy="3.8"
+            rx="3.776"
+            ry="3.8"
+            transform="translate(10.947 10.9)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+        />
+        <line
+            id="Line_2100"
+            data-name="Line 2100"
+            y1="3.329"
+            x2="7.432"
+            transform="translate(6.405 3.958)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+        />
+        <line
+            id="Line_2101"
+            data-name="Line 2101"
+            x2="5.141"
+            y2="2.849"
+            transform="translate(6.275 10.018)"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+        />
+    </g>
+</svg>

@@ -1,0 +1,88 @@
+/* Single Product Styles */
+.woocommerce-variation-price,
+.woocommerce-variation-description,
+.woocommerce-variation-availability{
+    display:none!important;
+}
+ /* #js_single_product_price .woocommerce-Price-currencySymbol{
+     font-size: 0.6em!important;
+     text-decoration: none!important;
+ } */
+#js_single_product_price del{
+    display:none!important;
+}
+#js_single_product_price ins{
+    text-decoration: none!important;
+}
+
+.woocommerce-variation-add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width:1024px) {
+        justify-content: flex-start;
+    }
+}
+
+li.not-available{
+    cursor:  not-allowed;
+    position: relative;
+}
+li.not-available > span{
+    opacity:.5;
+}
+li.not-available::after{
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: 50%;
+    right: -8px;
+    border-top: 2px solid;
+    border-color: red;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+li.not-available.w-full::after{
+    -webkit-transform:unset!important;
+    -moz-transform:unset!important;
+    -ms-transform:unset!important;
+    -o-transform:unset!important;
+    transform:unset!important;
+}
+@media screen AND (max-width:1023px){
+    .make_add_to_cart_button_fixed button.btn-single-add-to-cart{
+       position: fixed;
+       bottom: 62px;
+       left: 0;
+       width: 100%!important;
+       background-color: rgb(219 168 79 / 80%)!important;
+       z-index: 41!important;
+    }
+}
+.woocommerce-product-details__short-description .container{
+    margin-left: unset;
+    margin-right: unset;
+    max-width: unset;
+    padding-left: unset;
+    padding-right: unset;
+}
+
+#qty_increase:disabled,#qty_decrease:disabled{
+    cursor: not-allowed!important;
+    @apply bg-slate-50;
+}
+
+/* additional information tab */
+.woocommerce-product-attributes-item__label{
+    @apply text-left pr-3 pb-1;
+}
+.woocommerce-product-attributes-item__value{
+    @apply pb-1;
+    p{
+        @apply mb-0;
+    }
+}

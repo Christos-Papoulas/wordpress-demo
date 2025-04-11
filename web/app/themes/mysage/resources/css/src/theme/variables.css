@@ -1,0 +1,48 @@
+@theme {
+    --color-primary: #212121;
+    --color-secondary: #a67c00;
+    --color-anchorLink: #0042bf;
+    --color-bodyBg: #FFFFFF;
+    --color-body: #1A2141;
+
+    --color-red-100: #dd2626;
+    --color-red-600: #dd2626;
+    --color-green-600: #5cb85c;
+
+    --font-sans: 'Roboto';
+    --font-serif: 'Roboto';
+    --font-mono: 'Roboto';
+
+    --spacing-project: 2560px;
+    --spacing-container: 120rem;
+    --spacing-container-large: 120rem;
+    --spacing-container-medium: 72rem;
+    --spacing-container-small: 62.5rem;
+
+    --breakpoint-3xl: 120rem;
+    --breakpoint-4xl: 150rem;
+
+    --animate-shake: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    @keyframes wiggle {
+        10%,
+        90% {
+            transform: translate3d(-1px, 0, 0);
+        }
+        ,
+        20%,
+        80% {
+            transform: translate3d(2px, 0, 0);
+        }
+        ,
+        30%,
+        50%,
+        70 {
+            transform: translate3d(-4px, 0, 0);
+        }
+        ,
+        40%,
+        60% {
+            transform: translate3d(4px, 0, 0);
+        }
+    }
+}

@@ -1,0 +1,50 @@
+body.woocommerce-checkout.woocommerce-order-received {
+    #woocommerce_thankyou_paymentmethod_box{
+        h2{
+            @apply font-bold text-lg mb-3;
+        }
+        h3{
+            @apply font-normal text-lg mb-2;
+        }
+        ul{
+            @apply list-none ml-0;
+        }
+        p{
+            @apply mb-0;
+        }
+        .woocommerce-bacs-bank-details{
+            /* apply style for bacs */
+        }
+    }
+
+    .woocommerce-table--order-details{
+        tr th:nth-child(2) {
+            @apply text-right;
+        }
+            tr:not(:last-child) {
+            @apply border-b border-primary;
+        }
+        tr.woocommerce-table__line-item.order_item  {
+            @apply !border-none !text-sm;
+        
+        }
+        tbody{
+            @apply !border-b !border-primary;
+            .woocommerce-table__product-total.product-total{
+                text-align: end;
+                @apply !py-2 !text-sm md:!text-base !font-semibold !text-primary;
+            }
+        }
+        
+        tfoot{
+            th{
+                @apply !py-2 !text-sm md:!text-base !text-primary;
+            }
+            td{
+                text-align: end;
+                @apply !py-2 !text-sm md:!text-base !font-semibold !text-primary;
+            }
+        }
+    }
+
+}

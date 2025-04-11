@@ -1,0 +1,46 @@
+<svg
+    class="{{ $classes ?? '' }}"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 10.951 17.357"
+>
+    <defs>
+        <clipPath class="clip-path">
+            <rect class="Rectangle_6906" data-name="Rectangle 6906" fill="currentColor" />
+        </clipPath>
+    </defs>
+    <g class="Group_15458" data-name="Group 15458" clip-path="url(.clip-path)">
+        <path
+            class="Path_70521"
+            data-name="Path 70521"
+            d="M8.222,14.827a.127.127,0,0,1-.126.126H2.29a.128.128,0,0,1-.126-.126V2.734a.126.126,0,0,0-.126-.126H.825A.127.127,0,0,0,.7,2.734V16.177a.128.128,0,0,0,.126.126H9.561a.128.128,0,0,0,.126-.126V2.734a.127.127,0,0,0-.126-.126H8.349a.126.126,0,0,0-.126.126Z"
+            transform="translate(0.283 1.055)"
+            fill="currentColor"
+        />
+        <rect
+            class="Rectangle_6904"
+            data-name="Rectangle 6904"
+            width="1.465"
+            height="10.951"
+            rx="0.09"
+            transform="translate(3.489 3.662)"
+            fill="currentColor"
+        />
+        <rect
+            class="Rectangle_6905"
+            data-name="Rectangle 6905"
+            width="1.465"
+            height="10.951"
+            rx="0.09"
+            transform="translate(5.997 3.662)"
+            fill="currentColor"
+        />
+        <path
+            class="Path_70522"
+            data-name="Path 70522"
+            d="M7.588,1.465a.127.127,0,0,1-.126-.126V.126A.127.127,0,0,0,7.335,0H3.7a.128.128,0,0,0-.126.126V1.339a.126.126,0,0,1-.126.126H.126A.126.126,0,0,0,0,1.591V2.8a.127.127,0,0,0,.126.126h10.7a.127.127,0,0,0,.126-.126V1.591a.126.126,0,0,0-.126-.126Z"
+            transform="translate(0 -0.001)"
+            fill="currentColor"
+        />
+    </g>
+</svg>

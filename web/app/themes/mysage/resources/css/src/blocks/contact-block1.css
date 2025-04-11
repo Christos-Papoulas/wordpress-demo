@@ -1,0 +1,5 @@
+.contact-block1{
+    iframe{
+      @apply mb-0 xl:h-full w-full;
+    }
+}

@@ -1,0 +1,29 @@
+body.woocommerce-account{
+    span.password-input{
+        @apply w-full;
+    }
+    .woocommerce-view-order{
+
+        .woocommerce-order-details{
+            @apply w-full;
+
+            table{
+                @apply w-full;
+                thead{
+                    @apply hidden;
+                }
+            }
+        }
+        .woocommerce-customer-details{
+            @apply hidden;
+        }
+    }
+
+    tr.woocommerce-orders-table__row.woocommerce-orders-table__row--status-processing.order td {
+        @apply text-center;
+    }
+
+    li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout a:hover{
+        @apply text-red-100;
+    }
+}

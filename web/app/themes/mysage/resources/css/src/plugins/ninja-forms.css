@@ -1,0 +1,39 @@
+
+
+.nf-form-fields-required{
+    @apply hidden;
+}
+nf-fields-wrap{
+    .nf-field-label{
+        @apply block w-full text-body text-sm mb-0;
+    }
+    .woocommerce-input-wrapper{
+        @apply block;
+    }
+    .nf-field-element{
+        @apply theme-input-form-row;
+    }
+    select,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="number"],
+    textarea{
+        @apply theme-input;
+    }
+    input[type="submit"]{
+        @apply !w-full btn-md btn-solid-primary;
+    }
+    
+    textarea {
+        @apply border-b border-primary outline-0 w-full py-2 text-body text-base font-normal placeholder:text-gray-500;
+    }
+
+    .nf-error.listimage-wrap .nf-field-element ul, .nf-error .ninja-forms-field{
+        @apply border-b border-t-0 border-x-0 border-[#e80000];
+    }
+
+}
+
+
