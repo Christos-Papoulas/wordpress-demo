@@ -1,1 +1,0 @@
-<div class="cmtsfwc-HitsPerPage"></div>

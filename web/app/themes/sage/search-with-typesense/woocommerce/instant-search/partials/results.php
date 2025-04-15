@@ -1,1 +1,0 @@
-<div class="cmtsfwc-Result <?php echo ! is_woocommerce() ? 'woocommerce' : ''; ?>"></div>

@@ -1,6 +1,0 @@
-ul.woocommerce-error, .woocommerce-error {
-    a{
-      @apply !text-red-600;
-    }
-    @apply text-red-600 uppercase;
-}
