@@ -7,7 +7,7 @@
     @php(wp_head())
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    
+
   </head>
 
   <body @php(body_class())>
@@ -35,10 +35,6 @@
 
     @php(do_action('get_footer'))
     @php(wp_footer())
-
-    @if(!is_cart())
-      @include('woocommerce.cart.mini-cart')
-    @endif
 
     <div id="backdrop" class="hidden bg-[rgba(0,0,0,.5)] fixed inset-0 z-[1000]"></div>
     @include('components.wishlist-notification')
@@ -71,11 +67,7 @@
           'width' => ht_get_field('header_logo','options')['width'] ?? 0,
           'height' => ht_get_field('header_logo','options')['height'] ?? 0,
       ],
-      'myaccount_url' => wc_get_page_permalink('myaccount'),
-      'shop_url' => wc_get_page_permalink( 'shop' ),
-      'cart_url' =>  wc_get_page_permalink( 'cart' ),
-      'checkout_url' =>  wc_get_page_permalink( 'checkout' ),
-      'user' => $user,  
+      'user' => $user,
     ];
   ?>
   <script>

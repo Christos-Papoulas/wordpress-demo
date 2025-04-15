@@ -26,11 +26,11 @@ class Layouts extends Composer
     {
         return [
             'siteName' => $this->siteName(),
-            'contact' => new ContactInfo,
+            'contact' => '', // new ContactInfo,
             'current_user' => $this->getCurrentUser(),
-            'cart_contents_count' => $this->getCartContentsCount(),
-            'my_account_url' => $this->getMyAccountURL(),
-            'wishlist_url' => $this->getWishlistUrl()
+            'cart_contents_count' => 0, // $this->getCartContentsCount(),
+            'my_account_url' => '', // $this->getMyAccountURL(),
+            'wishlist_url' => '', // $this->getWishlistUrl()
 
         ];
     }

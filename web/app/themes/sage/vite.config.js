@@ -5,7 +5,7 @@ import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
-    base: '/wp-content/themes/sage/public/build/',
+    base: '/app/themes/sage/public/build',
     plugins: [
         tailwindcss(),
         laravel({

@@ -31,7 +31,7 @@ use Illuminate\Support\Facades\Vite;
 */
 load_theme_textdomain('sage', get_theme_file_path('resources/lang'));
 add_action('wp_enqueue_scripts', function () {
-    
+
     $theme = wp_get_theme();
     $public_asset_path = get_theme_file_uri('public/build/assets/');
 
@@ -80,7 +80,7 @@ if (config('theme.products.imagesFetchingMethod', 'native') != 'native') {
     add_filter( 'wpseo_add_opengraph_images', function( $image_container ) {
         if ( is_product() ) {
             global $product;
-            
+
             $url = MediaService::wp_get_attachment_image_src( '', $product->get_id(), 'full', false)[0] ?? '';
             $image_container->add_image_by_url( $url );
         }

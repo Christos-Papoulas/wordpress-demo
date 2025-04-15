@@ -51,7 +51,11 @@ class ContactInfo
 
     private function setupSocials()
     {
-        $socials = ht_get_field('socials', 'options') ?? [];
+        $socials = ht_get_field('socials', 'options');
+        if (empty($socials)) {
+            return [];
+        }
+
         foreach ($socials as $key => $row) {
             $icon = match ($row['platform']) {
                 'facebook' => Vite::asset('resources/images/social/facebook.png'),

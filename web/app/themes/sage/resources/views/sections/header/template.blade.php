@@ -1,9 +1,9 @@
 {{-- topbar --}}
 @include('sections.header.topbar')
 
-<header 
+<header
 id="app-header"
-x-data="{openMobileMenu:false, openSearch:false, firstLvlOpen: null, secondLvlOpen: null}" 
+x-data="{openMobileMenu:false, openSearch:false, firstLvlOpen: null, secondLvlOpen: null}"
 x-init="
 document.addEventListener('closeAllModals', (event) => {
     openMobileMenu=false;
@@ -38,7 +38,7 @@ style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);"
                     <div class="flex gap-4 items-center">
 
 
-                        {{-- search --}} 
+                        {{-- search --}}
                         <button x-data="{}" x-on:click="
                             document.dispatchEvent(new CustomEvent('toggleSearch', {detail: {}}));
                         "
@@ -46,16 +46,16 @@ style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);"
                             <svg class="w-4 h-4" viewBox="0 0 15.85 15.85"><defs><style>.search-icon{stroke-miterlimit:10;}</style></defs>
                             <circle fill="none" stroke="currentColor" cx="6.21" cy="6.21" r="5.71"/>
                             <line fill="none" stroke="currentColor" x1="10.27" y1="10.27" x2="15.5" y2="15.5"/>
-                            </svg> 
+                            </svg>
                         </button>
 
-                        
-                        {{-- search mobile --}} 
-                        <div 
-                            x-cloak 
-                            x-show="openMobileMenu" 
+
+                        {{-- search mobile --}}
+                        <div
+                            x-cloak
+                            x-show="openMobileMenu"
                             class="h-11 fixed xl:absolute top-[60px] xl:top-full left-0 w-full flex items-center px-3 z-[1020] xl:shadow-md xl:border-t xl:border-t-[#e5e7eb] {{ 'text-'.$header_color }} {{ 'bg-'.$header_bg }}"
-                            x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="translate-y-0 opacity-100 " 
+                            x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="translate-y-0 opacity-100 "
                             x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full">
                                 <button x-on:click="
                                     document.dispatchEvent(new CustomEvent('toggleSearch', {detail: {}}));
@@ -64,8 +64,8 @@ style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);"
                                     <svg class="w-4 h-4" viewBox="0 0 15.85 15.85">
                                     <circle fill="none" stroke="currentColor" stroke-miterlimit="10" cx="6.21" cy="6.21" r="5.71"/>
                                     <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="10.27" y1="10.27" x2="15.5" y2="15.5"/>
-                                    </svg>   
-                                </button>                                         
+                                    </svg>
+                                </button>
                         </div>
 
                         {{-- wishlist --}}
@@ -94,33 +94,9 @@ style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);"
                             </a>
                         </div>
 
-                        {{-- cart button --}}
-                        <button 
-                            x-data="cartButton"
-                            @if(!is_cart())
-                                x-on:click="
-                                @if(is_checkout())
-                                    window.location.href = '{{ wc_get_cart_url() }}';
-                                @else
-                                    if (window.innerWidth < 1280) {
-                                        window.location.href = '{{ wc_get_cart_url() }}';
-                                    }else{
-                                        document.dispatchEvent(new CustomEvent('toggleMiniCart', {detail: {}}));
-                                    }
-                                @endif
-                                "
-                            @endif
-                            type="button" class="flex">
-                            <svg class="w-4 h-4" viewBox="0 0 16 16"><defs><style>.bag-icon{stroke-miterlimit:10;}</style></defs>
-                                <rect fill="none" stroke="currentColor" x="0.5" y="4.71" width="15" height="10.79"/>
-                                <path fill="none" stroke="currentColor" d="M8,.5a3,3,0,0,0-3,3v1.2h6V3.51A3,3,0,0,0,8,.5Z"/>
-                            </svg>
-                            <span class="ml-1 {{ 'text-'.$header_color }} flex justify-center items-center rounded-full text-xs relative top-0.5" x-html="itemsCount > 0 ? itemsCount : ''"></span>
-                        </button>
-    
                         {{-- toggler --}}
                         <div class="items-center flex xl:hidden">
-                            <button 
+                            <button
                                 x-on:click="
                                 if(!openMobileMenu){
                                     document.dispatchEvent(new CustomEvent('closeAllModals', {detail: {}}));
@@ -149,52 +125,6 @@ style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);"
                 @include('sections.header.mobile-menu')
             @endif
         </div>
-
-        @if(is_product())
-            @include('sections.header.product-sticky-add-to-cart')
-        @endif
-
     </section>
 </header>
 
-{{-- fixed search modal --}}
-@if(!is_cart() && !is_checkout())
-    <div id="typesense-secondary-search"
-        x-data="{openSearch:false}"
-        x-init="
-            document.addEventListener('toggleSearch', (event) => {
-                openSearch=!openSearch;
-            });
-        "
-        x-cloak 
-        x-show="openSearch" 
-        class="fixed overflow-auto ht-container-no-max-width top-0 left-0 w-screen h-dvh flex items-center px-3 z-[1020] {{ 'text-'.$header_color }} {{ 'bg-'.$header_bg }}"
-        x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100 " 
-        x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-        <div class="relative flex flex-col justify-center-center w-full h-full pt-3">
-            <div class="flex items-center absolute top-4 xl:top-6 right-0 z-10">
-                <button type="button"  x-on:click="openSearch = false">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="15.74" height="15.74" viewBox="0 0 15.74 15.74" xml:space="preserve">
-                    <path fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M.35.35l15.03 15.03M15.38.35L.35 15.38"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="flex justify-between">
-                <?php echo do_shortcode('[cm_tsfwc_search
-                            cat_filter="show"
-                            routing="disable"
-                            price_filter="show"
-                            rating_filter="hide"
-                            attribute_filter="show"
-                            pagination="show"
-                            show_more_text="show"
-                            sortby="show"
-                            placeholder="' .  __( 'Search products', 'typesense-search-for-woocommerce' ) . '"
-                            show_featured_first="yes"
-                            unique_id="ts_woo_secondary_search"
-                        ]'); 
-                ?>
-            </div>
-        </div>
-    </div>
-@endif
