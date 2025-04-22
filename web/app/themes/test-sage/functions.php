@@ -74,3 +74,20 @@ add_action('after_setup_theme', function () {
     ]);
 });
 
+add_action('pre_get_posts', function ($query) {
+    if (! is_admin() && $query->is_main_query() && is_post_type_archive('event')) {
+        $today = date('Ymd');
+
+        $query->set('meta_key', 'event-date');
+        $query->set('orderby', 'meta_value_num');
+        $query->set('order', 'ASC');
+        $query->set('meta_query', [
+            [
+                'key' => 'event-date',
+                'compare' => '>=',
+                'value' => $today,
+                'type' => 'numeric'
+            ],
+        ]);
+    }
+});
