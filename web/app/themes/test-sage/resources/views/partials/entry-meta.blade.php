@@ -1,10 +1,7 @@
-<time class="dt-published" datetime="{{ get_post_time('c', true) }}">
-  {{ get_the_date() }}
+<time class="dt-published metabox" datetime="{{ get_post_time('c', true) }}">
+  Posted By <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author">{{ get_the_author() }}</a> on {{ get_the_date() }}
 </time>
 
-<p>
-  <span>{{ __('By', 'sage') }}</span>
-  <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" class="p-author h-card">
-    {{ get_the_author() }}
-  </a>
-</p>
+@if (has_category())
+  <p class="entry-categories">{!! get_the_category_list(', ') !!}</p>
+@endif

@@ -799,9 +799,9 @@ body.login {
   padding: 10px 0;
 }
 
-.site-header h1 a, .site-header .main-navigation a {
+/* .site-header h1 a, .site-header .main-navigation a {
   color: black;
-}
+} */
 
 .site-header__avatar {
   position: absolute;
