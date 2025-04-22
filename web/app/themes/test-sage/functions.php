@@ -66,3 +66,12 @@ function university_files() {
 }
 
 add_action('wp_enqueue_scripts', 'university_files');
+
+add_action('after_setup_theme', function () {
+    register_nav_menus([
+        'footerLocationOne' => __('Footer Location One', 'sage'),
+    ]);
+    register_nav_menus([
+        'footer_location_two' => __('Footer Location Two', 'sage'),
+    ]);
+});

@@ -16,25 +16,30 @@
             <div class="site-footer__col-two-three-group">
                 <div class="site-footer__col-two">
                     <h3 class="headline headline--small">Explore</h3>
-                    <nav class="nav-list">
-                        <ul>
-                            <li><a href="{{ site_url('/?page_id=25') }}">About Us</a></li>
-                            <li><a href="#">Programs</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Campuses</a></li>
-                        </ul>
-                    </nav>
+                    @if (has_nav_menu('footerLocationOne'))
+                      <nav class="nav-list" aria-label="{{ wp_get_nav_menu_name('footerLocationOne') }}">
+                        {!!
+                          wp_nav_menu([
+                            'theme_location' => 'footerLocationOne',
+                            'menu_class' => '', 'echo' => false
+                          ])
+                        !!}
+                      </nav>
+                    @endif
                 </div>
 
                 <div class="site-footer__col-three">
                     <h3 class="headline headline--small">Learn</h3>
-                    <nav class="nav-list">
-                        <ul>
-                            <li><a href="#">Legal</a></li>
-                            <li><a href="{{ site_url('/?page_id=3') }}">Privacy</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </nav>
+                    @if (has_nav_menu('footer_location_two'))
+                      <nav class="nav-list" aria-label="{{ wp_get_nav_menu_name('footer_location_two') }}">
+                        {!!
+                          wp_nav_menu([
+                            'theme_location' => 'footer_location_two',
+                            'menu_class' => '', 'echo' => false
+                          ])
+                        !!}
+                      </nav>
+                    @endif
                 </div>
             </div>
 
