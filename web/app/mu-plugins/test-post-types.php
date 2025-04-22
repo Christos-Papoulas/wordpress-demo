@@ -3,6 +3,7 @@
 add_action('init', function () {
     register_post_type('event', [
         'public' => true,
+        'show_in_rest' => true,
         'labels' => [
             'name' => 'Events',
             'add_new_item' => 'Add new Event',
@@ -13,3 +14,4 @@ add_action('init', function () {
         'menu_icon' => 'dashicons-calendar',
     ]);
 });
+ 
