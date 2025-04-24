@@ -9,6 +9,10 @@
     @endwhile
 
     {!! get_the_posts_navigation() !!}
+
+    <hr class="section-break">
+
+    <p>Looking for a recap of past events? <a href="{{ site_url('/past-events') }}">Check out our past events archive</p>
   </div>
 @endsection
 

@@ -22,7 +22,7 @@
 
 </div>
 
-@if ($pagination())
+@if (isset($pagination))
   <nav class="page-nav" aria-label="Page">
     {!! $pagination !!}
   </nav>
