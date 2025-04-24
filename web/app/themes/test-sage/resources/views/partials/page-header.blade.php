@@ -23,6 +23,6 @@
       <h2 class="headline headline--medium">We think you&rsquo;ll like it here.</h2>
     @endif
     <h3 class="headline headline--small">{!! the_archive_description() !!}</h3>
-    <a href="#" class="btn btn--large btn--blue">Find Your Major</a>
+    <a href="{{ get_post_type_archive_link('program') }}" class="btn btn--large btn--blue">Find Your Major</a>
   </div>
 </div>
