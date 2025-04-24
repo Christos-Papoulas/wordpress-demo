@@ -54,7 +54,7 @@ add_action('init', function () {
         ],
         'menu_icon' => 'dashicons-welcome-learn-more',
         'supports' => [
-            'title', 'editor',
+            'title', 'editor', 'thumbnail',
         ],
     ]);
 });

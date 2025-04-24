@@ -7,7 +7,15 @@
 
 <div class="container container--narrow page-section">
   <div class="generic-content">
-    {!! the_content() !!}
+    <div class="row group">
+      <div class="one-third">
+        {{ the_post_thumbnail('professorPortrait') }}
+      </div>
+
+      <div class="two-thirds">
+        {!! the_content() !!}
+      </div>
+    </div>
   </div>
 
   @if ($programs)
@@ -16,7 +24,9 @@
 
     <ul class="link-list min-list">
     @foreach ($programs as $program)
-      <li><a href="{{ get_the_permalink($program) }}">{{ get_the_title($program) }}</a></li>
+      <li>
+        <a href="{{ get_the_permalink($program) }}">{{ get_the_title($program) }}</a>
+      </li>
     @endforeach
     </ul>
   @endif

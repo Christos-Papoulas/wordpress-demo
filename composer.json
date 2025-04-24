@@ -42,7 +42,8 @@
     "roots/wp-password-bcrypt": "1.2.0",
     "wpackagist-theme/twentytwentyfive": "^1.0",
     "wpackagist-plugin/advanced-custom-fields": "^6.4",
-    "wpackagist-plugin/woocommerce": "^9.8"
+    "wpackagist-plugin/woocommerce": "^9.8",
+    "wpackagist-plugin/force-regenerate-thumbnails": "^2.2"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
