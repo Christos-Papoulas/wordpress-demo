@@ -1,7 +1,13 @@
+@php
+$banner = get_field('page-banner-background-image')['sizes']['pageBanner'] ?? Vite::asset('resources/images/library-hero.jpg');
+@endphp
 <div class="page-banner">
-  <div class="page-banner__bg-image" style="background-image: url('{{ Vite::asset('resources/images/library-hero.jpg') }}');"></div>
+  <div class="page-banner__bg-image" style="background-image: url('{{ $banner }}');"></div>
   <div class="page-banner__content container t-center c-white">
     <h1 class="headline headline--large">{!! $title !!}</h1>
+    <div class="page-banner__intro">
+      <p>{{ the_field('page-banner-subtitle') }}</p>
+    </div>
   </div>
 </div>
 
