@@ -20,6 +20,7 @@ class SingleProgram extends Composer
     {
         return [
             'events' => $this->relatedEvents(),
+            'professors' => $this->relatedProfessors(),
         ];
     }
 
@@ -45,6 +46,25 @@ class SingleProgram extends Composer
                 ],
             ],
             'orderby' => 'meta_value_num',
+            'order' => 'ASC',
+        ]);
+    }
+
+    public function relatedProfessors()
+    {
+        $today = date('Ymd');
+
+        return new WP_Query([
+            'posts_per_page' => -1,
+            'post_type' => 'professor',
+            'meta_query' => [
+                [
+                    'key' => 'related-programs',
+                    'compare' => 'LIKE',
+                    'value' => '"' . get_the_ID() .   '"',
+                ],
+            ],
+            'orderby' => 'title',
             'order' => 'ASC',
         ]);
     }

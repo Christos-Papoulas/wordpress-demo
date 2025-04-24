@@ -43,6 +43,19 @@ add_action('init', function () {
         ],
     ]);
 
-    $text = 'Loren ';
+    register_post_type('professor', [
+        'public' => true,
+        'labels' => [
+            'name' => 'Professors',
+            'add_new_item' => 'Add new Professor',
+            'edit_item' => 'Edit Professor',
+            'all_items' => 'All Professors',
+            'singular_name' => 'Professor',
+        ],
+        'menu_icon' => 'dashicons-welcome-learn-more',
+        'supports' => [
+            'title', 'editor',
+        ],
+    ]);
 });
  
