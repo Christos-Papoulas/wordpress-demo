@@ -22,5 +22,27 @@ add_action('init', function () {
          
         // 'show_in_rest' => false,
     ]);
+
+    register_post_type('program', [
+        'rewrite' => [
+            'slug' => 'programs'
+        ],
+        'has_archive' => true,
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => [
+            'name' => 'Programs',
+            'add_new_item' => 'Add new Program',
+            'edit_item' => 'Edit Program',
+            'all_items' => 'All Programs',
+            'singular_name' => 'Program',
+        ],
+        'menu_icon' => 'dashicons-awards',
+        'supports' => [
+            'title', 'editor',
+        ],
+    ]);
+
+    $text = 'Loren ';
 });
  
