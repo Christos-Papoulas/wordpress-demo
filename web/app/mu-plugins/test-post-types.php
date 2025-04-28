@@ -20,7 +20,7 @@ add_action('init', function () {
             'title', 'editor', 'excerpt',
         ],
 
-        // 'show_in_rest' => false,
+        'show_in_rest' => true,
     ]);
 
     register_post_type('program', [
@@ -29,7 +29,6 @@ add_action('init', function () {
         ],
         'has_archive' => true,
         'public' => true,
-        'show_in_rest' => true,
         'labels' => [
             'name' => 'Programs',
             'add_new_item' => 'Add new Program',
@@ -41,6 +40,7 @@ add_action('init', function () {
         'supports' => [
             'title', 'editor',
         ],
+        'show_in_rest' => true,
     ]);
 
     register_post_type('professor', [
@@ -56,6 +56,7 @@ add_action('init', function () {
         'supports' => [
             'title', 'editor', 'thumbnail',
         ],
+        'show_in_rest' => true,
     ]);
 
     register_post_type('campus', [
@@ -64,7 +65,6 @@ add_action('init', function () {
         ],
         'has_archive' => true,
         'public' => true,
-        'show_in_rest' => true,
         'labels' => [
             'name' => 'Campuses',
             'add_new_item' => 'Add new Campus',
@@ -77,6 +77,6 @@ add_action('init', function () {
             'title', 'editor', 'excerpt',
         ],
 
-        // 'show_in_rest' => false,
+        'show_in_rest' => true,
     ]);
 });
