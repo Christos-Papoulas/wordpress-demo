@@ -52,20 +52,24 @@ class Search {
       this.isSpinnerVisible = false
       this.resultsDiv.innerHTML = "<p>Searching...</p>"
       axios.get('/wp-json/wp/v2/posts?search=' + this.searchField.value)
-        .then(res => {
-          this.resultsDiv.innerHTML = `
-            <h2 class="search-overlay__section-title">General Information</h2>
-            <ul class="link-list min-list">
-              ${res.data.map(item => `<li><a href="${item.link}">${item.title.rendered}</a></li>`).join('')}
-            </ul>
-          `
-        })
+        .then(res => this.showResults(res))
     }, 1200);
 
     this.previousValue = this.searchField.value
   }
 
-  getResults
+  showResults(res) {
+    if (res.data.length == 0) {
+      this.resultsDiv.innerHTML = "<p>No results found</p>"
+      return
+    }
+    this.resultsDiv.innerHTML = `
+      <h2 class="search-overlay__section-title">General Information</h2>
+      <ul class="link-list min-list">
+        ${res.data.map(item => `<li><a href="${item.link}">${item.title.rendered}</a></li>`).join('')}
+      </ul>
+    `
+  }
 
   openOverlay() {
     this.isOverlayOpen = true
