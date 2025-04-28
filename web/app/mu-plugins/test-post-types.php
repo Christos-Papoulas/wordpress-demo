@@ -19,7 +19,7 @@ add_action('init', function () {
         'supports' => [
             'title', 'editor', 'excerpt',
         ],
-         
+
         // 'show_in_rest' => false,
     ]);
 
@@ -57,5 +57,26 @@ add_action('init', function () {
             'title', 'editor', 'thumbnail',
         ],
     ]);
+
+    register_post_type('campus', [
+        'rewrite' => [
+            'slug' => 'campuses'
+        ],
+        'has_archive' => true,
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => [
+            'name' => 'Campuses',
+            'add_new_item' => 'Add new Campus',
+            'edit_item' => 'Edit Campus',
+            'all_items' => 'All Campuses',
+            'singular_name' => 'Campus',
+        ],
+        'menu_icon' => 'dashicons-location-alt',
+        'supports' => [
+            'title', 'editor', 'excerpt',
+        ],
+
+        // 'show_in_rest' => false,
+    ]);
 });
- 
