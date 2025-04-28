@@ -3,6 +3,9 @@
     @php(dynamic_sidebar('sidebar-footer'))
 </footer>
 -->
+
+@include('components.search')
+
 <footer class="site-footer">
     <div class="site-footer__inner container container--narrow">
         <div class="group">
