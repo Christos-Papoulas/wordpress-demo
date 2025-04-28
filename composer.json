@@ -43,7 +43,9 @@
     "wpackagist-theme/twentytwentyfive": "^1.0",
     "wpackagist-plugin/advanced-custom-fields": "^6.4",
     "wpackagist-plugin/woocommerce": "^9.8",
-    "wpackagist-plugin/force-regenerate-thumbnails": "^2.2"
+    "wpackagist-plugin/force-regenerate-thumbnails": "^2.2",
+    "roots/acorn": "^5.0",
+    "log1x/acf-composer": "^3.4"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",

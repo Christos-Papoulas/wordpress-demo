@@ -5,7 +5,7 @@ namespace App\View\Composers;
 use Roots\Acorn\View\Composer;
 use WP_Query;
 
-class Post extends Composer
+class FrontPage extends Composer
 {
     /**
      * List of views served by this composer.
