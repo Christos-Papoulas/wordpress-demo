@@ -34,4 +34,17 @@
       @include('partials.content-event')
     @endwhile
   @endif
+
+  @if (count($campuses) > 0)
+    <hr class="section-break">
+    <h2 class="headline headline--medium">{{ get_the_title() }} available at these campuses:</h2>
+
+    <ul class="link-list min-list">
+    @foreach ($campuses as $campus)
+      <li>
+        <a href="{{ get_the_permalink($campus) }}">{{ get_the_title($campus) }}</a>
+      </li>
+    @endforeach
+    </ul>
+  @endif
 </div>

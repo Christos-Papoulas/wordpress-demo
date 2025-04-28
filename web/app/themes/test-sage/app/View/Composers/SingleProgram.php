@@ -21,6 +21,7 @@ class SingleProgram extends Composer
         return [
             'events' => $this->relatedEvents(),
             'professors' => $this->relatedProfessors(),
+            'campuses' => $this->relatedCampuses(),
         ];
     }
 
@@ -67,5 +68,10 @@ class SingleProgram extends Composer
             'orderby' => 'title',
             'order' => 'ASC',
         ]);
+    }
+
+    public function relatedCampuses()
+    {
+        return get_field('related_campus') ?: null;
     }
 }

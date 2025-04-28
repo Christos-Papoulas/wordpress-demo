@@ -100,5 +100,9 @@ add_action('pre_get_posts', function ($query) {
         $query->set('order', 'ASC');
         $query->set('posts_per_page', -1);
     }
+
+    if (! is_admin() && $query->is_main_query() && is_post_type_archive('campus')) {
+        $query->set('posts_per_page', -1);
+    }
 });
 
