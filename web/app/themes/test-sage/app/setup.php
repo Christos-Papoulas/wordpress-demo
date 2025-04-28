@@ -153,3 +153,11 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+add_action('rest_api_init', function () {
+    register_rest_field('post', 'author_name', [
+        'get_callback' => function ($post) {
+            return get_the_author_meta('display_name', $post['author']);
+        },
+    ]);
+});
