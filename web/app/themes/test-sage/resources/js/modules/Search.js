@@ -51,14 +51,15 @@ class Search {
       console.log("fetch results")
       this.isSpinnerVisible = false
       this.resultsDiv.innerHTML = "<p>Searching...</p>"
-      axios.get('/wp-json/wp/v2/posts?search=' + this.searchField.value)
+      axios.get('/wp-json/wp/v2/search?search=' + this.searchField.value)
         .then(res => this.showResults(res))
-    }, 1200);
+    }, 950);
 
     this.previousValue = this.searchField.value
   }
 
   showResults(res) {
+    console.log(res)
     if (res.data.length == 0) {
       this.resultsDiv.innerHTML = "<p>No results found</p>"
       return
@@ -66,7 +67,7 @@ class Search {
     this.resultsDiv.innerHTML = `
       <h2 class="search-overlay__section-title">General Information</h2>
       <ul class="link-list min-list">
-        ${res.data.map(item => `<li><a href="${item.link}">${item.title.rendered}</a></li>`).join('')}
+        ${res.data.map(item => `<li><a href="${item.url}">${item.title}</a></li>`).join('')}
       </ul>
     `
   }
@@ -74,6 +75,8 @@ class Search {
   openOverlay() {
     this.isOverlayOpen = true
     this.searchOverlay.classList.add("search-overlay--active")
+    this.searchField.value = ""
+    setTimeout(() => this.searchField.focus(), 301)
     document.body.classList.add("body-no-scroll")
   }
 
