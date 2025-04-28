@@ -35,6 +35,7 @@ Application::configure()
     ->withProviders([
         App\Providers\ThemeServiceProvider::class,
     ])
+    ->withRouting(api: base_path('routes/api.php'))
     ->boot();
 
 /*
