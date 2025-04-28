@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 class Search {
   constructor() {
     this.isOverlayOpen = false
@@ -49,7 +51,16 @@ class Search {
       console.log("fetch results")
       this.isSpinnerVisible = false
       this.resultsDiv.innerHTML = "<p>Searching...</p>"
-    }, 1500);
+      axios.get('/wp-json/wp/v2/posts?search=' + this.searchField.value)
+        .then(res => {
+          this.resultsDiv.innerHTML = `
+            <h2 class="search-overlay__section-title">General Information</h2>
+            <ul class="link-list min-list">
+              ${res.data.map(item => `<li><a href="${item.link}">${item.title.rendered}</a></li>`).join('')}
+            </ul>
+          `
+        })
+    }, 1200);
 
     this.previousValue = this.searchField.value
   }
