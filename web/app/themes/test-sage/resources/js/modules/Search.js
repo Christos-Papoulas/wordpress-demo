@@ -48,10 +48,9 @@ class Search {
     }
 
     this.typingTimer = setTimeout(() => {
-      console.log("fetch results")
       this.isSpinnerVisible = false
       this.resultsDiv.innerHTML = "<p>Searching...</p>"
-      axios.get('/wp-json/wp/v2/search?search=' + this.searchField.value)
+      axios.get('/api/search?term=' + this.searchField.value)
         .then(res => this.showResults(res))
     }, 950);
 
@@ -64,11 +63,65 @@ class Search {
       this.resultsDiv.innerHTML = "<p>No results found</p>"
       return
     }
+
     this.resultsDiv.innerHTML = `
-      <h2 class="search-overlay__section-title">General Information</h2>
-      <ul class="link-list min-list">
-        ${res.data.map(item => `<li><a href="${item.url}">${item.title}</a></li>`).join('')}
-      </ul>
+    <div class="row">
+      <div class="one-third">
+        <h2 class="search-overlay__section-title">Pages</h2>
+        <ul class="link-list min-list">
+          ${res.data.page.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join('')}
+        </ul>
+      </div>
+      <div class="one-third">
+        <h2 class="search-overlay__section-title">Programs</h2>
+        <ul class="link-list min-list">
+          ${res.data.program.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join('')}
+        </ul>
+      </div>
+      <div class="one-third">
+        <h2 class="search-overlay__section-title">Professors</h2>
+        <ul class="professor-cards">
+          ${res.data.professor.map(item => `
+            <li class="professor-card__list-item">
+              <a href="${item.permalink}" class="professor-card">
+                <img src="${item.image}" alt="" class="professor-card__image">
+                <span class="professor-card__name">${item.title}</span>
+              </a>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-third">
+        <h2 class="search-overlay__section-title">Posts</h2>
+        <ul class="link-list min-list">
+          ${res.data.post.map(item => `<li><a href="${item.permalink}">${item.title}</a> by ${item.authorName}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="one-third">
+        <h2 class="search-overlay__section-title">Campuses</h2>
+        <ul class="link-list min-list">
+          ${res.data.campus.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join('')}
+        </ul>
+      </div>
+      <div class="one-third">
+        <h2 class="search-overlay__section-title">Events</h2>
+          ${res.data.event.map(item => `
+            <div class="event-summary">
+              <a class="event-summary__date event-summary__date--beige t-center" href="${item.permalink}">
+                <span class="event-summary__month">${item.month}</span>
+                <span class="event-summary__day">${item.day}</span>
+              </a>
+              <div class="event-summary__content">
+                <h5 class="event-summary__title headline headline--tiny"><a href="${item.permalink}">${item.title}</a></h5>
+                <p>
+                  ${item.excerpt}
+                  <a href="${item.permalink}" class="nu gray">Read more</a></p>
+              </div>
+            </div>`).join('')}
+      </div>
+    </div>
     `
   }
 
