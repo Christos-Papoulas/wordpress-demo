@@ -20,6 +20,9 @@ add_action('init', function () {
             'title', 'editor', 'excerpt',
         ],
 
+		'capability_type' => 'event',
+		'map_meta_cap' => true,
+
         'show_in_rest' => true,
     ]);
 
@@ -76,6 +79,9 @@ add_action('init', function () {
         'supports' => [
             'title', 'editor', 'excerpt',
         ],
+
+		'capability_type' => 'campus',
+		'map_meta_cap' => true,
 
         'show_in_rest' => true,
     ]);
