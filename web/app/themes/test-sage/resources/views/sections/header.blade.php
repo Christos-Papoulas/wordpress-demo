@@ -28,8 +28,8 @@
           </span>
         </a>
       @else
-        <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
-        <a href="{{ site_url('/wp-signup.php') }}" class="btn btn--small btn--dark-orange float-left">Sign Up</a>
+        <a href="{{ wp_login_url() }}" class="btn btn--small btn--orange float-left push-right">Login</a>
+        <a href="{{ wp_registration_url() }}" class="btn btn--small btn--dark-orange float-left">Sign Up</a>
         <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
         @endif
       </div>
