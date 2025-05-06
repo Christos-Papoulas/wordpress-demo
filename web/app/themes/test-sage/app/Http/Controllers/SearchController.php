@@ -35,6 +35,18 @@ class SearchController
                 $customFields['excerpt'] = has_excerpt() ?
                     get_the_excerpt()
                     : wp_trim_words(get_the_content(), 18);
+            } else if ($postType === 'program') {
+                $relatedCampuses = get_field('related_campus');
+                if ($relatedCampuses) {
+                    foreach ($relatedCampuses as $campus) {
+                        $results['campus'][] = [
+                            'id' => $campus->ID,
+                            'title' => get_the_title($campus),
+                            'permalink' => get_the_permalink($campus),
+                            'authorName' => get_the_author($campus),
+                        ];
+                    }
+                }
             }
 
             $results[$postType][] = [
@@ -61,7 +73,7 @@ class SearchController
         }
 
         $programRelationshipsQuery = new WP_Query([
-            'post_type' => 'professor',
+            'post_type' => ['professor', 'event'],
             'meta_query' => $programsMetaQuery
 
         ]);
@@ -69,17 +81,31 @@ class SearchController
         while ($programRelationshipsQuery->have_posts()) {
             $programRelationshipsQuery->the_post();
             $postType = get_post_type();
+            $customFields = [];
+
+            if ($postType === 'event') {
+                $customFields['month'] = get_the_time('M');
+                $customFields['day'] = get_the_time('d');
+                $customFields['excerpt'] = has_excerpt() ?
+                    get_the_excerpt()
+                    : wp_trim_words(get_the_content(), 18);
+            }
 
             $results[$postType][] = [
                 'id' => get_the_ID(),
                 'title' => get_the_title(),
                 'permalink' => get_the_permalink(),
                 'authorName' => get_the_author(),
-                'image' => get_the_post_thumbnail_url(0, 'professorLandscape')
+                'image' => get_the_post_thumbnail_url(0, 'professorLandscape'),
+                ...$customFields
             ];
+
+
         }
 
         $results['professor'] = array_map("unserialize", array_unique(array_map("serialize", $results['professor'])));
+        $results['event'] = array_map("unserialize", array_unique(array_map("serialize", $results['event'])));
+        $results['campus'] = array_map("unserialize", array_unique(array_map("serialize", $results['campus'])));
 
         return $results;
     }
