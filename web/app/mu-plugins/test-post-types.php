@@ -85,4 +85,21 @@ add_action('init', function () {
 
         'show_in_rest' => true,
     ]);
+
+	register_post_type('note', [
+        'public' => false,
+		'show_ui' => true,
+        'labels' => [
+            'name' => 'Notes',
+            'add_new_item' => 'Add new Note',
+            'edit_item' => 'Edit Note',
+            'all_items' => 'All Notes',
+            'singular_name' => 'Note',
+        ],
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'supports' => [
+            'title', 'editor',
+        ],
+        'show_in_rest' => true,
+    ]);
 });

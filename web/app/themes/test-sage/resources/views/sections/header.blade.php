@@ -18,6 +18,8 @@
       @endif
       <div class="site-header__util">
       @if (is_user_logged_in())
+        <a href="{{ site_url('/my-notes') }}" class="btn btn--small btn--orange float-left push-right">My Notes</a>
+
         <a href="{{ wp_logout_url() }}" class="btn btn--small btn--dark-orange float-left btn--with-photo">
           <span class="site-header__avatar">
             {!! get_avatar(get_current_user_id(), 60) !!}
