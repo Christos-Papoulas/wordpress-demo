@@ -13,6 +13,13 @@ $userNotes = new WP_Query([
 
 <div class="container container--narrow page-section">
   <div class="generic-content">
+    <div class="create-note" x-data="createNote()">
+      <h2 class="headline headline--medium">Create a New Note</h2>
+      <input class="new-note-title" type="text" placeholder="Title" x-model="title">
+      <textarea class="new-note-body" placeholder="Your note here..." x-model="body"></textarea>
+      <span class="submit-note" @click="createNote()">Create Note</span>
+      <span class="note-limit-message">Note limit reached!</span>
+    </div>
     <ul class="link-list min-list" id="my-notes">
       @while($userNotes->have_posts()) @php($userNotes->the_post())
         @include('partials.item-note', [

@@ -142,9 +142,9 @@ class Search {
   keyPress(e) {
     if (e.keyCode == 27 && this.isOverlayOpen) { // escape key
       this.closeOverlay()
-    } else if (e.keyCode == 83 && !this.isOverlayOpen) { // s key
+    } /*else if (e.keyCode == 83 && !this.isOverlayOpen) { // s key
       this.openOverlay()
-    }
+    }*/
   }
 }
 

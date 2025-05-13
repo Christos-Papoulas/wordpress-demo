@@ -10,6 +10,7 @@ import MobileMenu from "./modules/MobileMenu"
 import HeroSlider from "./modules/HeroSlider"
 import Search from "./modules/Search"
 import Notes from "./modules/Notes"
+import CreateNote from "./modules/CreateNote"
 
 // Instantiate a new object using our modules/classes
 const mobileMenu = new MobileMenu()
@@ -19,4 +20,5 @@ const search = new Search()
 window.Alpine = Alpine
 
 Alpine.data('notes', Notes)
+Alpine.data('createNote', CreateNote)
 Alpine.start()
