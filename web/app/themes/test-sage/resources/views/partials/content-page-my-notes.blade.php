@@ -15,7 +15,7 @@ $userNotes = new WP_Query([
   <div class="generic-content">
     <ul class="link-list min-list" id="my-notes">
       @while($userNotes->have_posts()) @php($userNotes->the_post())
-        <li>
+        <li data-id="{{ get_the_ID() }}">
           <input class="note-title-field" type="text" value="{{ esc_attr(get_the_title()) }}">
           <span class="edit-note">
             <i class="fa fa-pencil" aria-hidden="true"></i> Edit
@@ -23,7 +23,7 @@ $userNotes = new WP_Query([
           <span class="delete-note">
             <i class="fa fa-trash-o" aria-hidden="true"></i> Delete
           </span>
-          <textarea class="note-body-field" readonly="readonly" data-id="{{ get_the_ID() }}">{{ wp_strip_all_tags(get_the_content()) }}</textarea>
+          <textarea class="note-body-field" readonly="readonly">{{ wp_strip_all_tags(get_the_content()) }}</textarea>
         </li>
       @endwhile
     </ul>
