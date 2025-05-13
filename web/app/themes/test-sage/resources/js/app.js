@@ -3,15 +3,20 @@ import.meta.glob([
   '../fonts/**',
 ]);
 
+import Alpine from 'alpinejs'
+
 // Our modules / classes
 import MobileMenu from "./modules/MobileMenu"
 import HeroSlider from "./modules/HeroSlider"
 import Search from "./modules/Search"
-import MyNotes from "./modules/MyNotes"
+import Notes from "./modules/Notes"
 
 // Instantiate a new object using our modules/classes
 const mobileMenu = new MobileMenu()
 const heroSlider = new HeroSlider()
 const search = new Search()
-const myNotes = new MyNotes()
 
+window.Alpine = Alpine
+
+Alpine.data('notes', Notes)
+Alpine.start()
