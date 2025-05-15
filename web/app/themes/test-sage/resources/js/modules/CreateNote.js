@@ -19,7 +19,7 @@ export default () => ({
       {
         title: this.title,
         content: this.body,
-        status: 'publish'
+        status: 'private'
       },
       {
         headers: {'X-WP-Nonce': testSage.nonce}
@@ -38,13 +38,11 @@ export default () => ({
     })
     .catch(err => {
       // WP returns 403 if your user has hit the note limit
-      if (
-        err.response &&
-        err.response.data &&
-        err.response.data.data &&
-        err.response.data.data.status === 403
-      ) {
+      if (err.response && err.response.status === 403) {
         this.noteLimit = true
+        document.querySelector('.note-limit-message').style.visibility = 'visible'
+        document.querySelector('.note-limit-message').style.opacity = 1
+
       } else {
         alert(err.message || 'Create failed')
       }

@@ -67,5 +67,26 @@ class ThemeServiceProvider extends SageServiceProvider
         add_filter('login_headerurl', fn () => home_url('/'));
 
         add_filter('login_headertitle', fn () => get_bloginfo('name'));
+
+        add_filter('wp_insert_post_data', function ($data, $postArr) {
+            if ($data['post_type'] === 'note') {
+                if (count_user_posts(get_current_user_id(), $data['post_type']) >= 5 && empty($postArr['ID'])) {
+                    http_response_code(403);
+                    die('You have reached your note limit.');
+                }
+
+                $data['post_content'] = sanitize_textarea_field($data['post_content']);
+                $data['post_title'] = sanitize_text_field($data['post_title']);
+            }
+            // Force note posts to be private
+            if ($data['post_type'] === 'note' && $data['post_status'] !== 'trash') {
+                $data['post_status'] = 'private';
+            }
+
+            return $data;
+        }, accepted_args: 2);
+
+        // remove "Private: " from titles
+        add_filter('the_title', fn ($title) => str_replace('Private: ', '', $title));
     }
 }
