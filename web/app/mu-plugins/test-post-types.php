@@ -20,8 +20,8 @@ add_action('init', function () {
             'title', 'editor', 'excerpt',
         ],
 
-		'capability_type' => 'event',
-		'map_meta_cap' => true,
+        'capability_type' => 'event',
+        'map_meta_cap' => true,
 
         'show_in_rest' => true,
     ]);
@@ -59,6 +59,7 @@ add_action('init', function () {
         'supports' => [
             'title', 'editor', 'thumbnail',
         ],
+		'has_archive' => true,
         'show_in_rest' => true,
     ]);
 
@@ -80,17 +81,17 @@ add_action('init', function () {
             'title', 'editor', 'excerpt',
         ],
 
-		'capability_type' => 'campus',
-		'map_meta_cap' => true,
+        'capability_type' => 'campus',
+        'map_meta_cap' => true,
 
         'show_in_rest' => true,
     ]);
 
-	register_post_type('note', [
+    register_post_type('note', [
         'public' => false,
-		'show_ui' => true,
-		'capability_type' => 'note',
-		'map_meta_cap' => true,
+        'show_ui' => true,
+        'capability_type' => 'note',
+        'map_meta_cap' => true,
         'labels' => [
             'name' => 'Notes',
             'add_new_item' => 'Add new Note',
@@ -103,5 +104,21 @@ add_action('init', function () {
             'title', 'editor',
         ],
         'show_in_rest' => true,
+    ]);
+
+    register_post_type('like', [
+        'public' => false,
+        'show_ui' => true,
+        'labels' => [
+            'name' => 'Likes',
+            'add_new_item' => 'Add new Like',
+            'edit_item' => 'Edit Like',
+            'all_items' => 'All Likes',
+            'singular_name' => 'Like',
+        ],
+        'menu_icon' => 'dashicons-heart',
+        'supports' => [
+            'title'
+        ],
     ]);
 });

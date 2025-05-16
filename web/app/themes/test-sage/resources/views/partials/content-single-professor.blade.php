@@ -6,6 +6,7 @@
       </div>
 
       <div class="two-thirds">
+        @include('components.like')
         {!! the_content() !!}
       </div>
     </div>
