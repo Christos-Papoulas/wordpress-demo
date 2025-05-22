@@ -50,8 +50,7 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "laravel/pint": "^1.18",
-    "wp-cli/wp-cli-bundle": "^2.11"
+    "laravel/pint": "^1.18"
   },
   "config": {
     "optimize-autoloader": true,
