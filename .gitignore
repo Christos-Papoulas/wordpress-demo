@@ -2,6 +2,7 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 !web/app/plugins/the-test
+!web/app/plugins/word-filter-plugin
 web/app/mu-plugins/*/
 web/app/themes/twentytwentyfive/
 web/app/upgrade
