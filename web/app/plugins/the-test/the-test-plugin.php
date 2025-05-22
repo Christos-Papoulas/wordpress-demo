@@ -7,10 +7,8 @@ Version: 1.0.0
 Author: Tralala Lala
 */
 
-add_filter('the_content', function ($content) {
-	if (is_single() && is_main_query()) {
-		$content .= '<p>The Test Plugin</p>';
-	}
+if ( is_admin() ) {
+	require_once __DIR__ . '/WordCountAndTime.php';
 
-	return $content;
-});
+	$wordCountAndTime = new WordCountAndTime();
+}
