@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Featured Professor Block Type\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-02 14:44+0000\n"
+"PO-Revision-Date: 2025-06-02 14:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: Ελληνικά\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.7.2; php-8.4.5\n"
+"X-Domain: featured-professor"
+
+#. Name of the plugin
+msgid "Featured Professor Block Type"
+msgstr "Χαρακτηριστικά καθηγητή"
+
+#. Author of the plugin
+msgid "Lala Trala"
+msgstr "Λαλα τραλα"
+
+#: build/index.js:207 src/index.js:68
+msgid "Select a professor"
+msgstr "Καθηγητής"
